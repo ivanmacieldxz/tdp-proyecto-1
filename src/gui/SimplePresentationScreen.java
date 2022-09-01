@@ -182,8 +182,8 @@ public class SimplePresentationScreen extends JFrame {
 		surnameField.setText(studentData.getLastName());
 		luField.setText(studentData.getId() + "");
 		
-        String fecha = DateTimeFormatter.ofPattern("dd/mm/yyyy").format(LocalDateTime.now());
-        String dia = DateTimeFormatter.ofPattern("hh:mm").format(LocalDateTime.now()); 
+        String fecha = DateTimeFormatter.ofPattern("dd/MM/yyyy").format(LocalDateTime.now());
+        String dia = DateTimeFormatter.ofPattern("HH:mm").format(LocalDateTime.now()); 
 		
 		creationTimeLabel.setText("Esta ventana fue generada el " + fecha + " a las " + dia);
 		
